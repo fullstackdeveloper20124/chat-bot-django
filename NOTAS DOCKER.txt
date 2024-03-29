@@ -1,0 +1,27 @@
+    docker-compose up --build
+    docker-compose down
+    docker-compose up -d
+    docker ps # Lista contenedores
+    docker exec memoria_chatbot-web-1 python manage.py migrate
+
+    #Listar Contenedores Existentes
+docker ps -a
+
+Interpretando la Salida
+CONTAINER ID: Un identificador único para cada contenedor.
+IMAGE: La imagen de Docker a partir de la cual se creó el contenedor.
+COMMAND: El comando que se está ejecutando en el contenedor.
+CREATED: Cuándo fue creado el contenedor.
+STATUS: Muestra el estado del contenedor (ejecutándose, detenido, pausado, etc.).
+PORTS: Los puertos que están siendo mapeados o expuestos por el contenedor.
+NAMES: El nombre asignado al contenedor.
+
+#Lista de volumenes
+docker volume ls
+
+
+
+#Inspeccionar un Contenedor
+docker inspect flowiseai-flowise-1
+
+docker inspect flowiseai-flowise-1 | ConvertFrom-Json | Select-Object -ExpandProperty Mounts

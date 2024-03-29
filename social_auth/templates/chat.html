@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Responsivo con Bootstrap</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        .container {
+            margin-top: 50px; display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Alinea los elementos al principio y al final */
+            height: 100vh;
+        }
+        #chatbot {
+        flex-grow: 1;
+        overflow-y: auto;
+        overflow-y: scroll;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container" style="max-width: 800px;">
+        <h1 class="mt-4">Chatbot</h1>
+
+        <!-- Ventana del chatbot usando Bootstrap Card -->
+        <div class="card mt-4">
+            <div class="card-body" id="chatbot">
+                <p class="card-text">Bienvenido. ¿En qué puedo ayudarte?</p>
+            </div>
+        </div>
+
+        <!-- Área de entrada de texto usando Bootstrap Input Group -->
+        <div class="input-group mt-4">
+            <input type="text" class="form-control" id="user-input" placeholder="Escribe tu mensaje...">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" onclick="enviarMensaje()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluir Bootstrap JS (jQuery y Popper.js son requeridos) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    {% block javascript %}
+        <script src="{% static '/js/chat.js' %}"></script>
+    {% endblock %}
+
+    
+</body>
+</html>
+
+
+{% endblock %}

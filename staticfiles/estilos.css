@@ -1,0 +1,45 @@
+/* estilos.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+main {
+    margin: 15px;
+}
+/* Estilos base */
+.logo {
+    width: 100%; /* Ancho completo en dispositivos pequeños */
+    max-width: 150px; /* Ancho máximo para mantener la proporción */
+    height: auto;
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 768px) {
+    .logo {
+        width: 10%; /* Ajustar el ancho en pantallas más grandes */
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}

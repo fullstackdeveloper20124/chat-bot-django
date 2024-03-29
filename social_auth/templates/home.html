@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <header>
+            
+      <img src="{% static '/images/Logo_EcoLex.png' %}" alt="Logo de EcoLex" class="logo">
+      <h1>EcoLex - Tu Asistente Legal en Energía</h1>
+    </header>
+    
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}">
+    <!-- Aquí podrías añadir tus metaetiquetas para SEO -->
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="{% url 'home' %}">EcoLex</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Iniciar Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <main>
+      <section id="introduction">
+          <h2>¡Bienvenido! Soy EcoLex</h2>
+          <p>Tu asistente virtual especializado en derecho energético enfocado en el sector de hidrocarburos en México...</p>
+      </section>
+
+      <section id="objectives">
+        <h2>Objetivos y Metodología de EcoLex</h2>
+        <p>En EcoLex, nuestra misión es simplificar la comprensión y manejo del derecho energético en el sector de los hidrocarburos en México. Estamos comprometidos a proveer una asistencia legal virtual que no solo informa, sino que también empodera a nuestros usuarios en la toma de decisiones críticas. Nuestros objetivos principales incluyen:</p>
+        
+        <ul>
+          <li><strong>Provisión de Información Legal Actualizada:</strong> Mantener a nuestros usuarios al día con las últimas legislaciones y regulaciones del sector energético. EcoLex está constantemente actualizando su base de datos para asegurarse de que la información proporcionada sea la más reciente y relevante.</li>
+          
+          <li><strong>Asistencia en Documentación Legal:</strong> Ofrecer soporte en la creación y comprensión de documentos legales, ajustados a las necesidades y contextos específicos de cada usuario, con un lenguaje claro y accesible.</li>
+          
+          <li><strong>Comprensión del Contexto del Usuario:</strong> Cada consulta es única, y EcoLex se esfuerza por comprender las circunstancias individuales para ofrecer asesoramiento personalizado y aplicable.</li>
+          
+          <li><strong>Claridad sobre el Alcance del Servicio:</strong> EcoLex es una herramienta de apoyo; sin embargo, enfatizamos que nuestro servicio es complementario y no reemplaza la necesidad de asesoramiento legal profesional.</li>
+          
+          <li><strong>Mecanismo de Retroalimentación:</strong> Valoramos los comentarios y sugerencias de nuestros usuarios. La retroalimentación es fundamental para mejorar continuamente la eficacia y utilidad de EcoLex.</li>
+          
+          <li><strong>Ética de Búsqueda:</strong> Respetamos la privacidad y preferencias de búsqueda de nuestros usuarios. No realizamos búsquedas en la web sin consentimiento explícito, y siempre informamos sobre la procedencia de la información obtenida.</li>
+        </ul>
+        
+        <p>Nuestra metodología se centra en un enfoque basado en evidencia, utilizando recursos y datos actuales para garantizar la precisión y confiabilidad de la información que proporcionamos. Con un compromiso claro hacia la transparencia y la conciencia de nuestras limitaciones, EcoLex se posiciona como un asistente legal virtual líder en el sector de hidrocarburos en México.</p>
+      </section>
+      
+
+      <section id="user-instructions">
+        <h2>Instrucciones para el Usuario</h2>
+        <p>Para asegurar una experiencia óptima y eficaz al usar EcoLex, te recomendamos seguir estas sencillas instrucciones:</p>
+        
+        <ul>
+          <li><strong>Formulación de Preguntas:</strong> Al hacer consultas, sé lo más claro y específico posible. Proporciona detalles relevantes que puedan influir en la respuesta para obtener asesoría precisa y personalizada.</li>
+          
+          <li><strong>Verificación de Información:</strong> Aunque EcoLex ofrece información basada en una extensa base de datos legislativa, te animamos a que siempre verifiques los datos e información con un profesional legal, especialmente antes de tomar decisiones importantes.</li>
+                              
+          <li><strong>Retroalimentación:</strong> Tu opinión es invaluable para nosotros. Si tienes sugerencias sobre cómo podemos mejorar o si encuentras algún área de EcoLex que podría ser más útil, no dudes en comunicárnoslo.</li>
+        </ul>
+        
+        <p>Estamos aquí para asistirte en cada paso del camino, pero recuerda que EcoLex es una herramienta de soporte y no sustituye el consejo legal directo de un abogado calificado. Usar EcoLex implica la aceptación de nuestras <a href="#limitations">limitaciones y advertencias</a>.</p>
+      </section>
+      
+      <section id="limitations">
+        <h2>Limitaciones y Advertencias</h2>
+        <p>Es importante reconocer las limitaciones inherentes al uso de EcoLex como una herramienta de asistencia legal virtual:</p>
+        
+        <ul>
+          <li><strong>Alcance del Asesoramiento:</strong> EcoLex está diseñado para ofrecer información y asistencia preliminar, no para proporcionar asesoramiento legal definitivo o representación legal.</li>
+          
+          <li><strong>Actualizaciones Legislativas:</strong> Las leyes y regulaciones están sujetas a cambios. EcoLex se esfuerza por mantener la información actualizada, pero es responsabilidad del usuario asegurarse de que cualquier información obtenida sea vigente.</li>
+          
+          <li><strong>Personalización:</strong> Aunque EcoLex intenta personalizar la asistencia, las respuestas generadas pueden no abarcar todas las particularidades de tu caso específico. Consulta con un profesional para asesoramiento detallado y personalizado.</li>
+          
+          <li><strong>Decisiones Legales:</strong> No tomes decisiones legales importantes basadas únicamente en las respuestas de EcoLex. Siempre es recomendable buscar la opinión de un abogado calificado.</li>
+          
+          <li><strong>Privacidad y Confidencialidad:</strong> Asegúrate de no compartir información extremadamente sensible o privada al utilizar el chatbot. Si bien respetamos la privacidad, la seguridad completa no puede ser garantizada en un entorno virtual.</li>
+          
+          <li><strong>Uso de Información:</strong> EcoLex utiliza la información proporcionada por los usuarios para mejorar la precisión de sus respuestas. Sin embargo, no asumimos la responsabilidad por el uso indebido de dicha información por parte de terceros.</li>
+        </ul>
+        
+        <p>Al utilizar EcoLex, aceptas estas limitaciones y entiendes que cualquier acción que tomes basada en la información proporcionada será bajo tu propio riesgo. Te animamos a leer nuestros <a href="#terms-of-service">Términos de Servicio</a> para obtener más detalles sobre tu uso de EcoLex.</p>
+      </section>
+     
+    </main>
+
+    <footer>
+        <p>Derechos de autor &copy; 2024. EcoLex - Asistente Legal en Hidrocarburos.</p>
+        <!-- Añade enlaces a redes sociales, política de privacidad, etc. -->
+    </footer>
+    <script>
+      // Limpiar 'chatSessionId' al cargar la página
+      localStorage.removeItem('chatSessionId');
+    </script>
+    
+</body>
+</html>
